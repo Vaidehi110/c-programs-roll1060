@@ -1,4 +1,4 @@
-//FILE MAMAGEMENT
+//FILE MAMAGEMENT----input data----sentance
 #include<stdio.h>
 int main()
 {
@@ -11,7 +11,9 @@ int main()
     else
     {
         printf("\n file open");
-        
+        fputs("vaidehi unagar",f);    //to write in file
+        printf("\n data return ");
     }
+    fclose(f);
     return 0;
 }

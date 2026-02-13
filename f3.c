@@ -1,4 +1,4 @@
-//FILE MAMAGEMENT
+//FILE MAMAGEMENT----input data----one char
 #include<stdio.h>
 int main()
 {
@@ -11,7 +11,9 @@ int main()
     else
     {
         printf("\n file open");
-        
+        fputc('A',f);    //to write in file
+        printf("\n data return ");
     }
+    fclose(f);
     return 0;
 }

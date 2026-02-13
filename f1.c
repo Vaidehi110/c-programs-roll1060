@@ -1,13 +1,8 @@
+//FILE MAMAGEMENT
 #include<stdio.h>
-void main()
+int main()
 {
-    int i;
-printf("enter a range:");
-scanf("%d"
-
-    for(i=2;i<=no;i++)
-{
-   printf("%d\n",no);
+    FILE *f;
+    f=fopen("f2.txt","w");  //file name , mode
+    return 0;
 }
-}
-

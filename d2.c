@@ -1,11 +1,19 @@
 #include<stdio.h>
-void main()
+struct s1
 {
-  int i=5;
-  do
-  { 
-    printf("\n %d",i);
-    i--;
-  }
-    while(i>=1);
+    int a;
+};
+void show(struct s1 *s)
+{
+   
+    printf("a=%d",s->a);
+     s->a++;
+}
+int main()
+{
+    struct s1 s={10};
+    show(&s);
+    printf("\na=%d",s.a);
+   
+    return 0;
 }
