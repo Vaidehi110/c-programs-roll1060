@@ -1,8 +1,8 @@
-//case sensitive
+//use macro (macro = function)
 #include<stdio.h>
+#include"add.h" //---" whose file name who made by user "
 int main()
 {
-  int Nv=50;
-   printf("%d",NV);
-  return 0;
+    printf("\n sum = %d ",ADD(20,20));
+    return 0;
 }

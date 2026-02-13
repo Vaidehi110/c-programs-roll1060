@@ -1,21 +1,30 @@
 #include<stdio.h>
+struct stu
+{
+    int rollno;
+    char name[50];
+}s[5];
+
 int main()
 {
-  char str[10]="vaidehi";
-  int i,len=0;
-  for(i=0;i<10;i++)
-  {
-    printf("str[%d] = %c \n",i,str[i]);
-    if(str[i]!='\0')
-  {
-    len++;
-  }
-  }
-  for(i=len;i>=0;i--)
-  {
-    printf("%c",str[i]);
-  }
-  
-    printf("\n len of str is %d ",len);
+    //struct stu s[4];
+    int i,search;
+    for(i=0;i<5;i++)
+    {
+        printf("\n enter rollno and name -");
+        scanf("%d %s",&s[i].rollno,s[i].name);
+
+    }
+    printf("\n enter which number you want -");
+    scanf("%d",&search);
+    for(i=0;i<5;i++)
+    {
+        if(s[i].rollno==search)
+        {
+            printf("\n rollno is %d and name is %s ",s[i].rollno,s[i].name);
+
+        }
+    }
+    
   return 0;
 }

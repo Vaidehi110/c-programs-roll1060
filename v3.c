@@ -1,21 +1,18 @@
-/*wap to find out factaurial to given no
-like
-enter no:-5
-5
-4
-3
-2
-1 factaurial=120*/
+//double pointer
 #include<stdio.h>
-void main()
+int main()
 {
-  int i;
-  int no;
-  printf("enter the no :-");
-  scanf("%d",&no);
-  for(i=1;i>=5;i++)
-  {
-    printf(" %d * %d * %d * %d * %d \n",no*no*no*no*no);
-    printf("\n factaurial = %d",no);
-  }
+    int a=10;
+    int *p;
+    p=&a;
+    int **q;  //double pointer
+    q=&p;
+    printf("\n a =%d",a);
+    printf("\n add of a =%p",&a);
+    printf("\n value of a =%d",*p);
+    printf("\n value of p =%p",p);
+    printf("\n a =%d",**q);
+    printf("\n value of q =%p",q);
+    return 0;
+
 }

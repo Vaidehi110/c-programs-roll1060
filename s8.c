@@ -1,22 +1,18 @@
-/* w a p to except a string from a user and to count no of vowels no space, and len of the string*/
+// 3. with paramiter no return type
+
 #include<stdio.h>
+//void sum();
+//int sum();
+void sum(int a,int b);
+//int sum(int a,int b);
 int main()
 {
-  char str[50];
-  int i,len=0,vowels=0;
-  printf("\n enter str :-");
-  fgets(str,sizeof(str),stdin);
-  for(i=0;str[i]!='\0';i++)
-  {
-    if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U')
-  {
-    vowels++; 
-  }
-    len++;
-  }
-   puts("str is :-");
-   puts(str);
-    printf("\n len of str is %d ",len);
-    printf("\n no of vowels is %d",vowels);
+    sum(20,20);
     return 0;
+}
+void sum(int a,int b)
+{
+    int sum;
+    sum=a+b;
+    printf("sum = %d ",sum);
 }

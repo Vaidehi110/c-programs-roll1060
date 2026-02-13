@@ -1,8 +1,8 @@
-//can contain letter digit and underscore
+//PRE PROSSESOR ---- define
 #include<stdio.h>
+#define add(a,b) (a+b)
 int main()
 {
-  int n@v=50;
-   printf("%d",n@v);
-  return 0;
-} 
+    printf("\n sum = %d ",add(20,20));
+    return 0;
+}

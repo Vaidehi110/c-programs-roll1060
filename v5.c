@@ -1,18 +1,17 @@
+//dynamic memory allocation
+//---------MALLOC---------
 #include<stdio.h>
-void main()
+#include<stdlib.h>
+int main()
 {
-  int i,j;
-  for(i=1;i<=5;i++)
-  {
-    for(j=1;j<=5;j++)
-    if(j>=6-i)
+    int *p,i;
+    p=(int *)malloc(5 * sizeof(int));
+    p[0] = 10;
+    p[1] = 20;
+    p[3] = 40;
+    for(i=0;i<5;i++)
     {
-        printf("   ");
+        printf("\n %d ",p[i]);
     }
-    else
-    {
-        printf(" * ");
-    }
-    printf(" \n ");
-  }
+    return 0;
 }

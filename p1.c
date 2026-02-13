@@ -1,8 +1,8 @@
-//must being start with a letter and underscore
+//PRE PROSSESOR ---- define
 #include<stdio.h>
+#define a 10
 int main()
 {
-  int 1vb=200;
-  printf("%d",1vb);
-  return 0;
+    printf("\n a = %d ",a);
+    return 0;
 }
